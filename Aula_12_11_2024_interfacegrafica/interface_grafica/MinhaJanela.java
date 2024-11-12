@@ -10,7 +10,11 @@ public class MinhaJanela extends JFrame{
         setLocationRelativeTo(null); //posição
         setResizable(false); //redimensionamento de janela
         setLayout(null); //Deixa o layout vazio para posicionar livremente os componentes
+        inicializarComponentes();
+    }
 
+        //criar um método
+    public void inicializarComponentes(){
         //Botão
         JButton jButton = new JButton("Botão 1"); //Criação de botão novo
         jButton.setBounds(30, 50, 200, 50); //Proporções e posição do botão
@@ -20,8 +24,6 @@ public class MinhaJanela extends JFrame{
         jButton.addActionListener(e -> {
             JOptionPane.showMessageDialog(null, "Seja bem-vindo!");
         });
-
-        //criar um método
-        public void inicializarComponentes
     }
 }
+
